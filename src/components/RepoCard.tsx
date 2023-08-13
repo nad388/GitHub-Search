@@ -30,6 +30,7 @@ const RepoCard = ({ repo }: { repo: IRepo }) => {
 					Forks: <span className='font-bold mr-2'>{repo.forks}</span>
 					Watchers: <span className='font-bold'>{repo.watchers}</span>
 				</p>
+
 				<p className='text-sm font-thin'>{repo?.description}</p>
 
 				{!isFav && (
@@ -42,7 +43,7 @@ const RepoCard = ({ repo }: { repo: IRepo }) => {
 				)}
 				{isFav && (
 					<button
-						className='py-2 px-4 bg-blue-700 rounded hover:shadow-md transition-all'
+						className='py-2 px-4 bg-blue-700 text-blue-200 rounded hover:shadow-md transition-all'
 						onClick={removeFromFavorite}
 					>
 						Remove
