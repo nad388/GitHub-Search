@@ -1,6 +1,7 @@
 import { useActions } from '../hooks/actions'
+import { IFav } from '../models/models'
 
-const FavoriteCard = ({ fav }: any) => {
+const FavoriteCard = ({ fav }: IFav) => {
 	const { removeFavorite } = useActions()
 
 	const deleteFromFavorite = (event: React.MouseEvent<HTMLButtonElement>) => {

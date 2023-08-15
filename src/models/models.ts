@@ -130,3 +130,7 @@ export interface IOwner {
 	type: string
 	site_admin: boolean
 }
+
+export interface IFav {
+	fav: string
+}
